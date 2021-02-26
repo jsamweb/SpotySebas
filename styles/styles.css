@@ -1,0 +1,74 @@
+:root {
+    --blue: #81ccf1;
+    --yellow: #efc66a;
+    --pink: #d8a6cb;
+    --dark-pink: #c59ece;
+    --purple: #9996cb;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    height: 100vh;
+    background-color: rgb(163, 185, 185);
+}
+
+.container {
+    display: grid;
+    grid-template: repeat(10, 1fr) / repeat(20, 1fr);
+    height: 100vh;
+}
+.title{
+    background-color: cornsilk;
+    grid-column: 2 / 5;
+    grid-row: 1 / 1;
+    border-radius:1rem;
+    margin: 1rem 0 2rem 0;
+    border: transparent;
+    padding: 1rem 1.5rem;
+    font-size: 1.8rem;
+    background: linear-gradient(0deg, rgba(228,209,0,1) 0%, rgba(112,112,210,1) 50%, rgba(0,212,255,1) 100%);
+}
+.item-a{
+    background-color: cornsilk;
+    grid-column: 2 / 20;
+    grid-row: 2 / auto;
+    border-radius:1rem;
+    margin-bottom: 1.5rem;
+}
+.item-title{
+    font-size: 3rem;
+    justify-content: flex-start;
+    padding: 3rem 0 0 3rem;
+    
+}
+.item-a p, .item-b, .item-c{
+    font-size: 1.6rem;
+    justify-content: flex-start;
+    padding: 1.5rem 1.5rem 3rem 3rem;
+}
+
+
+.item-b{
+    background-color: cornsilk;
+    grid-column: 2 / 11;
+    grid-row: 3 / auto;
+    border-radius:1rem;
+    margin: 0 1rem 0 0;
+}
+.item-c{
+    background-color: cornsilk;
+    grid-column: 11 / 20;
+    grid-row: 3 / auto;
+    border-radius:1rem;
+    margin: 0 0 0 1rem;
+}
