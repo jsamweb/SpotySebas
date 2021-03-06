@@ -5,6 +5,68 @@
 }
 html{
     font-size: 62.5%;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
+.container{
+    display: grid;
+    grid-template-rows: 56px 360px auto;
+    height: 100vh;
+}
+/* HEADER */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    background-color: rgb(228, 248, 237);
+}
+.header h2 {
+    font-weight: bold;
+    font-size: 1.6rem ;
+}
+.header-buttoms{
+    display: flex;
+    
+}
+.user{
+   
+    width: 30px;
+    height: 30px;
+    background-image: url(/assets/user-circle.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.more{
+    margin-left: 1.2rem;
+    width: 30px;
+    height: 30px;
+    background-image: url(/assets/ellipsis-h.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* CARDS */
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: teal;
+}
+.sub-card img{
+    width:70vw;
+    min-width: 180px;
+    max-width: 300px;
+}
+.cards p{
+    font-size: 1.6rem;
+    line-height: 20px;
+    color: rgb(24, 31, 28);
+}
+.cards .sub-title{
+    font-size: 1.2rem;
+    line-height: 14.5px;
+    color: rgb(31, 31, 31);
+}
