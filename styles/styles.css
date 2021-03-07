@@ -1,3 +1,8 @@
+:root {
+    --colorMain: #c0c0c0;
+    --brShadow: -6px 6px 15px rgba(0,0,0,0.5);
+    --tlShadow: 6px -6px 15px rgba(255,255,255,0.8);
+  }
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +17,12 @@ html{
     display: grid;
     grid-template-rows: 56px 360px auto;
     height: 100vh;
+    width: 100%;
+    max-width:425px ;
+    margin: auto;
+    background: linear-gradient(145deg, #f0f0f0, rgb(137, 218, 173));
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
 }
 /* HEADER */
 .header{
@@ -19,21 +30,31 @@ html{
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
-    background-color: rgb(228, 248, 237);
+    height: 56px;
+   
 }
-.header h2 {
+h2 {
     font-weight: bold;
     font-size: 1.6rem ;
+    color: #ffffff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), -1px -1px 4px rgba(117, 255, 189, 0.4);
 }
 .header-buttoms{
     display: flex;
-    
 }
-.user{
-   
+.ecualizer{
     width: 30px;
     height: 30px;
-    background-image: url(/assets/user-circle.svg);
+    background-image: url(/assets/ecualizer.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.user{
+    margin-left: 1.2rem;
+    width: 30px;
+    height: 30px;
+    background-image: url(/assets/user.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -42,10 +63,11 @@ html{
     margin-left: 1.2rem;
     width: 30px;
     height: 30px;
-    background-image: url(/assets/ellipsis-h.svg);
+    background-image: url(/assets/more.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 /* CARDS */
 .cards{
@@ -53,7 +75,7 @@ html{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: teal;
+    background-color: #008080;
 }
 .sub-card img{
     width:70vw;
@@ -68,5 +90,84 @@ html{
 .cards .sub-title{
     font-size: 1.2rem;
     line-height: 14.5px;
-    color: rgb(31, 31, 31);
+    color:#084646;
+}
+/* PROGRESS-BAR */
+.progress-bar{
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(1, 1fr);
+    align-items:center;
+
+}
+.status-bar{
+    display: flex;
+    margin: 0 auto;
+    background-image: url(/assets/status-bar.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 280px;
+    height: 5px;
+    justify-content: space-between;
+    margin: 1rem auto;
+}
+
+.number{
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    font-weight: lighter;
+}
+/* BUTTONS */
+.buttons{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+   
+}
+
+.share{
+    margin-left: 1rem;
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(/assets/share.svg);
+}
+.before{
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(/assets/before.svg);
+}
+.play{
+    
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(/assets/play.svg);
+}
+.next{
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(/assets/next.svg);
+}
+.like{
+    margin-right: 1rem;
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-image: url(/assets/like.svg);
 }
